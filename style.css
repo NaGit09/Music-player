@@ -1,0 +1,79 @@
+body {
+  background-image: url("./dccl--javascript-music-player/bg.jpg");
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrap_img {
+  object-fit: cover;
+  object-position: center;
+}
+.card_element  {
+  display: none;
+}
+.card-item  {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #212936;
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
+}
+.card-item h5 {
+    margin: 10px;
+}
+.card-item span {
+    color: #4D5562;
+
+}
+.img_music {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+
+}
+#card1 {
+    display: "block";
+}
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background-color: #e5e7eb;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #c93b76;
+}
+.time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #c93b76;
+}
+.bi-play-fill ,.bi-skip-start-fill , .bi-skip-end-fill{
+    color: #fff;
+    font-size: 25px;
+}
+.group_button {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
