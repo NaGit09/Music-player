@@ -18,11 +18,13 @@ for (let i = 0; i < audio.length; i++) {
   audio[i].addEventListener("timeupdate", updateProgress);
 }
 function NextCard() {
+  if(index+1 == listCards.length) return
   audio[index].pause();
   listCards[index++].style.display = "none";
   listCards[index].style.display = "block";
 }
 function PreviousCard() {
+  if(index-1 < 0) return
   audio[index].pause();
   listCards[index--].style.display = "none";
   listCards[index].style.display = "block";
